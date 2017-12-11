@@ -463,7 +463,7 @@ class Commander {
         if ($command['token'])
             $parameters = array_merge($parameters, ['token' => $this->token]);
 
-        if (isset($command['format']))
+        if (isset($command['format']) and !isset($parameters['no_format']))
             foreach ($command['format'] as $format)
                 if (isset($parameters[$format]))
                     $parameters[$format] = self::format($parameters[$format]);
