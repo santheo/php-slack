@@ -70,6 +70,14 @@ class Commander {
             'token'    => true,
             'endpoint' => '/channels.rename'
         ],
+        'conversations.list' => [
+            'token'    => true,
+            'endpoint' => '/conversations.list'
+        ],
+        'users.conversations' => [
+            'token'    => true,
+            'endpoint' => '/users.conversations'
+        ],
         'channels.setPurpose' => [
             'token'    => true,
             'endpoint' => '/channels.setPurpose',
